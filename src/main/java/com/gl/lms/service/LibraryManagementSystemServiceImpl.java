@@ -23,9 +23,6 @@ public  class LibraryManagementSystemServiceImpl implements LibraryManagementSys
     private BooksRepository booksRepository;
 
     @Autowired
-    private LibraryCardsRepository libraryCardsRepository;
-
-    @Autowired
     private ReviewsRepository reviewsRepository;
 
     @Override
@@ -215,7 +212,7 @@ public  class LibraryManagementSystemServiceImpl implements LibraryManagementSys
         }
 
 
-        reviewsRepository.deleteAll( reviewsRepository.findByBook(books));;
+        reviewsRepository.deleteAll(new ArrayList<>(reviewsRepository.findByBook(books)));
         booksRepository.delete(books);
 
 

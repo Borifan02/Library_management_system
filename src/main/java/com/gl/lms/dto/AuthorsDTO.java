@@ -1,6 +1,5 @@
 package com.gl.lms.dto;
 
-import com.gl.lms.entity.Books;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;

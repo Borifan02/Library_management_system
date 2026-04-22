@@ -994,3 +994,881 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 11-Jul-2025 16:08:23 WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m53s984ms511µs600ns).
 11-Jul-2025 16:25:32 INFO - Init duration for springdoc-openapi is: 319 ms
 12-Jul-2025 06:09:15 WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h29m51s255ms626µs500ns).
+20-Apr-2026 14:31:37 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20-Apr-2026 14:31:37 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+20-Apr-2026 14:31:38 INFO - HV000001: Hibernate Validator 8.0.3.Final
+20-Apr-2026 14:31:38 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.8 with PID 13714 (started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+20-Apr-2026 14:31:38 INFO - No active profile set, falling back to 1 default profile: "default"
+20-Apr-2026 14:31:42 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-Apr-2026 14:31:42 INFO - Finished Spring Data repository scanning in 153 ms. Found 5 JPA repository interfaces.
+20-Apr-2026 14:31:44 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-Apr-2026 14:31:44 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+20-Apr-2026 14:31:44 INFO - HHH000026: Second-level cache disabled
+20-Apr-2026 14:31:45 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+20-Apr-2026 14:31:45 INFO - HikariPool-1 - Starting...
+20-Apr-2026 14:31:47 WARN - SQL Error: 0, SQLState: 28P01
+20-Apr-2026 14:31:47 ERROR - FATAL: password authentication failed for user "postgres"
+20-Apr-2026 14:31:47 WARN - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:590) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.5.jar:3.5.5]
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:778) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:234) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.10.jar:42.7.10]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	... 120 more
+20-Apr-2026 14:31:47 ERROR - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+20-Apr-2026 14:31:47 WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+20-Apr-2026 14:31:47 INFO - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20-Apr-2026 14:31:47 ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:590) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.5.jar:3.5.5]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.17.jar:6.2.17]
+	... 100 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:410) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.17.jar:6.2.17]
+	... 100 more
+20-Apr-2026 14:31:47 WARN - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.gl.lms.LibraryManagementSystemApplicationTests@3fd9e01c]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@217b0952 testClass = com.gl.lms.LibraryManagementSystemApplicationTests, locations = [], classes = [com.gl.lms.LibraryManagementSystemApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@50fe837a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@546ccad7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@62fe6067, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@31e75d13, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@78fb9a67, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@83298d7, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@9b48d934], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) [junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) [surefire-junit-platform-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.5.jar:3.5.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.5.jar:3.5.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:590) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.17.jar:6.2.17]
+	... 80 more
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:590) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.17.jar:6.2.17]
+	... 80 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:410) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.45.Final.jar:6.6.45.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.17.jar:6.2.17]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:590) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:151) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.13.jar:3.5.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.17.jar:6.2.17]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.17.jar:6.2.17]
+	... 80 more
+20-Apr-2026 14:34:35 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20-Apr-2026 14:34:35 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+20-Apr-2026 14:34:36 INFO - HV000001: Hibernate Validator 8.0.3.Final
+20-Apr-2026 14:34:37 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.8 with PID 14839 (started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+20-Apr-2026 14:34:37 INFO - No active profile set, falling back to 1 default profile: "default"
+20-Apr-2026 14:34:40 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-Apr-2026 14:34:40 INFO - Finished Spring Data repository scanning in 254 ms. Found 5 JPA repository interfaces.
+20-Apr-2026 14:34:43 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-Apr-2026 14:34:43 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+20-Apr-2026 14:34:43 INFO - HHH000026: Second-level cache disabled
+20-Apr-2026 14:34:44 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+20-Apr-2026 14:34:44 INFO - HikariPool-1 - Starting...
+20-Apr-2026 14:34:45 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:library_management_system_test user=SA
+20-Apr-2026 14:34:45 INFO - HikariPool-1 - Start completed.
+20-Apr-2026 14:34:45 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+20-Apr-2026 14:34:45 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+20-Apr-2026 14:34:47 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20-Apr-2026 14:34:47 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-Apr-2026 14:34:49 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-Apr-2026 14:34:52 INFO - Started LibraryManagementSystemApplicationTests in 16.086 seconds (process running for 19.613)
+20-Apr-2026 14:34:53 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-Apr-2026 14:34:53 INFO - HikariPool-1 - Shutdown initiated...
+20-Apr-2026 14:34:53 INFO - HikariPool-1 - Shutdown completed.
+20-Apr-2026 14:36:04 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20-Apr-2026 14:36:04 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+20-Apr-2026 14:36:06 INFO - HV000001: Hibernate Validator 8.0.3.Final
+20-Apr-2026 14:36:06 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.8 with PID 15550 (started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+20-Apr-2026 14:36:06 INFO - No active profile set, falling back to 1 default profile: "default"
+20-Apr-2026 14:36:08 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-Apr-2026 14:36:09 INFO - Finished Spring Data repository scanning in 151 ms. Found 5 JPA repository interfaces.
+20-Apr-2026 14:36:12 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-Apr-2026 14:36:12 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+20-Apr-2026 14:36:12 INFO - HHH000026: Second-level cache disabled
+20-Apr-2026 14:36:13 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+20-Apr-2026 14:36:13 INFO - HikariPool-1 - Starting...
+20-Apr-2026 14:36:13 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:library_management_system_test user=SA
+20-Apr-2026 14:36:13 INFO - HikariPool-1 - Start completed.
+20-Apr-2026 14:36:14 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+20-Apr-2026 14:36:14 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+20-Apr-2026 14:36:16 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20-Apr-2026 14:36:16 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-Apr-2026 14:36:20 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-Apr-2026 14:36:24 INFO - Started LibraryManagementSystemApplicationTests in 18.425 seconds (process running for 22.246)
+20-Apr-2026 14:36:27 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-Apr-2026 14:36:27 INFO - HikariPool-1 - Shutdown initiated...
+20-Apr-2026 14:36:27 INFO - HikariPool-1 - Shutdown completed.
+20-Apr-2026 14:37:48 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20-Apr-2026 14:37:48 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+20-Apr-2026 14:37:49 INFO - HV000001: Hibernate Validator 8.0.3.Final
+20-Apr-2026 14:37:49 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.8 with PID 16268 (started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+20-Apr-2026 14:37:49 INFO - No active profile set, falling back to 1 default profile: "default"
+20-Apr-2026 14:37:53 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-Apr-2026 14:37:54 INFO - Finished Spring Data repository scanning in 233 ms. Found 5 JPA repository interfaces.
+20-Apr-2026 14:37:56 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+20-Apr-2026 14:37:56 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+20-Apr-2026 14:37:56 INFO - HHH000026: Second-level cache disabled
+20-Apr-2026 14:37:57 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+20-Apr-2026 14:37:58 INFO - HikariPool-1 - Starting...
+20-Apr-2026 14:37:58 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:library_management_system_test user=SA
+20-Apr-2026 14:37:58 INFO - HikariPool-1 - Start completed.
+20-Apr-2026 14:37:58 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+20-Apr-2026 14:37:58 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+20-Apr-2026 14:38:01 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20-Apr-2026 14:38:02 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-Apr-2026 14:38:05 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-Apr-2026 14:38:09 INFO - Started LibraryManagementSystemApplicationTests in 20.003 seconds (process running for 23.719)
+20-Apr-2026 14:38:12 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+20-Apr-2026 14:38:12 INFO - HikariPool-1 - Shutdown initiated...
+20-Apr-2026 14:38:12 INFO - HikariPool-1 - Shutdown completed.
+21-Apr-2026 11:24:27 INFO - HV000001: Hibernate Validator 8.0.3.Final
+21-Apr-2026 11:24:27 INFO - Starting LibraryManagementSystemApplication using Java 17.0.18 with PID 7009 (/home/borifan/Library_management_system/LibraryManagementSystem/target/classes started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+21-Apr-2026 11:24:27 INFO - No active profile set, falling back to 1 default profile: "default"
+21-Apr-2026 11:24:29 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-Apr-2026 11:24:30 INFO - Finished Spring Data repository scanning in 419 ms. Found 5 JPA repository interfaces.
+21-Apr-2026 11:24:32 INFO - Tomcat initialized with port 8080 (http)
+21-Apr-2026 11:24:32 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 11:24:32 INFO - Starting service [Tomcat]
+21-Apr-2026 11:24:32 INFO - Starting Servlet engine: [Apache Tomcat/10.1.53]
+21-Apr-2026 11:24:33 INFO - Initializing Spring embedded WebApplicationContext
+21-Apr-2026 11:24:33 INFO - Root WebApplicationContext: initialization completed in 5580 ms
+21-Apr-2026 11:24:34 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-Apr-2026 11:24:34 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+21-Apr-2026 11:24:34 INFO - HHH000026: Second-level cache disabled
+21-Apr-2026 11:24:35 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-Apr-2026 11:24:35 INFO - HikariPool-1 - Starting...
+21-Apr-2026 11:24:37 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ca1e49a
+21-Apr-2026 11:24:37 INFO - HikariPool-1 - Start completed.
+21-Apr-2026 11:24:37 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+21-Apr-2026 11:24:40 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-Apr-2026 11:24:40 WARN - SQL Warning Code: 0, SQLState: 00000
+21-Apr-2026 11:24:40 WARN - constraint "uk5mtto2jcmfrwfg0p1ui8mnweu" of relation "books" does not exist, skipping
+21-Apr-2026 11:24:40 WARN - SQL Warning Code: 0, SQLState: 00000
+21-Apr-2026 11:24:40 WARN - constraint "ukdhxuydjj5l1vds6s9eex23dcr" of relation "user_data" does not exist, skipping
+21-Apr-2026 11:24:40 WARN - SQL Warning Code: 0, SQLState: 00000
+21-Apr-2026 11:24:40 WARN - constraint "ukoj8aadf6iha7ixj3q7p36x4fu" of relation "user_data" does not exist, skipping
+21-Apr-2026 11:24:40 WARN - SQL Warning Code: 0, SQLState: 00000
+21-Apr-2026 11:24:40 WARN - constraint "ukjtqibbffagcpvn27yhkni1t0j" of relation "user_data" does not exist, skipping
+21-Apr-2026 11:24:40 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 11:24:42 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-Apr-2026 11:24:43 INFO - Starting ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 11:24:43 INFO - Tomcat started on port 8080 (http) with context path '/'
+21-Apr-2026 11:24:43 INFO - Started LibraryManagementSystemApplication in 17.579 seconds (process running for 19.02)
+21-Apr-2026 11:39:30 INFO - HV000001: Hibernate Validator 8.0.3.Final
+21-Apr-2026 11:39:30 INFO - Starting LibraryManagementSystemApplication using Java 17.0.18 with PID 4927 (/home/borifan/Library_management_system/LibraryManagementSystem/target/classes started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+21-Apr-2026 11:39:30 INFO - No active profile set, falling back to 1 default profile: "default"
+21-Apr-2026 11:39:32 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-Apr-2026 11:39:32 INFO - Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+21-Apr-2026 11:39:33 INFO - Tomcat initialized with port 8080 (http)
+21-Apr-2026 11:39:33 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 11:39:33 INFO - Starting service [Tomcat]
+21-Apr-2026 11:39:33 INFO - Starting Servlet engine: [Apache Tomcat/10.1.53]
+21-Apr-2026 11:39:33 INFO - Initializing Spring embedded WebApplicationContext
+21-Apr-2026 11:39:33 INFO - Root WebApplicationContext: initialization completed in 2704 ms
+21-Apr-2026 11:39:33 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-Apr-2026 11:39:34 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+21-Apr-2026 11:39:34 INFO - HHH000026: Second-level cache disabled
+21-Apr-2026 11:39:34 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-Apr-2026 11:39:34 INFO - HikariPool-1 - Starting...
+21-Apr-2026 11:39:35 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30133a11
+21-Apr-2026 11:39:35 INFO - HikariPool-1 - Start completed.
+21-Apr-2026 11:39:35 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+21-Apr-2026 11:39:37 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-Apr-2026 11:39:37 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 11:39:39 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-Apr-2026 11:39:40 INFO - Starting ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 11:39:40 INFO - Tomcat started on port 8080 (http) with context path '/'
+21-Apr-2026 11:39:40 INFO - Started LibraryManagementSystemApplication in 10.349 seconds (process running for 11.994)
+21-Apr-2026 11:49:31 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-Apr-2026 11:49:31 INFO - Initializing Servlet 'dispatcherServlet'
+21-Apr-2026 11:49:31 INFO - Completed initialization in 246 ms
+21-Apr-2026 11:49:32 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+21-Apr-2026 11:49:32 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+21-Apr-2026 12:02:46 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+21-Apr-2026 12:02:47 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+21-Apr-2026 12:03:10 INFO - Commencing graceful shutdown. Waiting for active requests to complete
+21-Apr-2026 12:03:10 INFO - Graceful shutdown complete
+21-Apr-2026 12:03:10 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 12:03:10 INFO - HikariPool-1 - Shutdown initiated...
+21-Apr-2026 12:03:10 INFO - HikariPool-1 - Shutdown completed.
+21-Apr-2026 12:03:42 INFO - HV000001: Hibernate Validator 8.0.3.Final
+21-Apr-2026 12:03:43 INFO - Starting LibraryManagementSystemApplication using Java 17.0.18 with PID 7694 (/home/borifan/Library_management_system/LibraryManagementSystem/target/classes started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+21-Apr-2026 12:03:43 INFO - No active profile set, falling back to 1 default profile: "default"
+21-Apr-2026 12:03:44 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-Apr-2026 12:03:44 INFO - Finished Spring Data repository scanning in 165 ms. Found 5 JPA repository interfaces.
+21-Apr-2026 12:03:45 INFO - Tomcat initialized with port 8080 (http)
+21-Apr-2026 12:03:45 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 12:03:45 INFO - Starting service [Tomcat]
+21-Apr-2026 12:03:45 INFO - Starting Servlet engine: [Apache Tomcat/10.1.53]
+21-Apr-2026 12:03:45 INFO - Initializing Spring embedded WebApplicationContext
+21-Apr-2026 12:03:45 INFO - Root WebApplicationContext: initialization completed in 2422 ms
+21-Apr-2026 12:03:45 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-Apr-2026 12:03:45 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+21-Apr-2026 12:03:46 INFO - HHH000026: Second-level cache disabled
+21-Apr-2026 12:03:46 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-Apr-2026 12:03:46 INFO - HikariPool-1 - Starting...
+21-Apr-2026 12:03:47 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ca1e49a
+21-Apr-2026 12:03:47 INFO - HikariPool-1 - Start completed.
+21-Apr-2026 12:03:47 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+21-Apr-2026 12:03:48 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-Apr-2026 12:03:49 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 12:03:49 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-Apr-2026 12:03:50 INFO - Starting ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 12:03:50 INFO - Tomcat started on port 8080 (http) with context path '/'
+21-Apr-2026 12:03:50 INFO - Started LibraryManagementSystemApplication in 8.604 seconds (process running for 9.715)
+21-Apr-2026 12:04:02 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-Apr-2026 12:04:02 INFO - Initializing Servlet 'dispatcherServlet'
+21-Apr-2026 12:04:02 INFO - Completed initialization in 1 ms
+21-Apr-2026 12:04:03 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+21-Apr-2026 12:05:21 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource LMS.
+21-Apr-2026 12:06:45 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource LMS/books.
+21-Apr-2026 12:07:57 INFO - Init duration for springdoc-openapi is: 597 ms
+21-Apr-2026 12:24:00 INFO - Commencing graceful shutdown. Waiting for active requests to complete
+21-Apr-2026 12:24:00 INFO - Graceful shutdown complete
+21-Apr-2026 12:24:00 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 12:24:01 INFO - HikariPool-1 - Shutdown initiated...
+21-Apr-2026 12:24:01 INFO - HikariPool-1 - Shutdown completed.
+21-Apr-2026 12:24:23 INFO - HV000001: Hibernate Validator 8.0.3.Final
+21-Apr-2026 12:24:23 INFO - Starting LibraryManagementSystemApplication using Java 17.0.18 with PID 9766 (/home/borifan/Library_management_system/LibraryManagementSystem/target/classes started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+21-Apr-2026 12:24:23 INFO - No active profile set, falling back to 1 default profile: "default"
+21-Apr-2026 12:24:24 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-Apr-2026 12:24:25 INFO - Finished Spring Data repository scanning in 73 ms. Found 5 JPA repository interfaces.
+21-Apr-2026 12:24:25 INFO - Tomcat initialized with port 8080 (http)
+21-Apr-2026 12:24:26 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 12:24:26 INFO - Starting service [Tomcat]
+21-Apr-2026 12:24:26 INFO - Starting Servlet engine: [Apache Tomcat/10.1.53]
+21-Apr-2026 12:24:26 INFO - Initializing Spring embedded WebApplicationContext
+21-Apr-2026 12:24:26 INFO - Root WebApplicationContext: initialization completed in 2505 ms
+21-Apr-2026 12:24:26 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-Apr-2026 12:24:26 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+21-Apr-2026 12:24:26 INFO - HHH000026: Second-level cache disabled
+21-Apr-2026 12:24:27 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-Apr-2026 12:24:27 INFO - HikariPool-1 - Starting...
+21-Apr-2026 12:24:27 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a531637
+21-Apr-2026 12:24:27 INFO - HikariPool-1 - Start completed.
+21-Apr-2026 12:24:27 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+21-Apr-2026 12:24:29 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-Apr-2026 12:24:29 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 12:24:30 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-Apr-2026 12:24:30 INFO - Starting ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 12:24:30 INFO - Tomcat started on port 8080 (http) with context path '/'
+21-Apr-2026 12:24:30 INFO - Started LibraryManagementSystemApplication in 8.041 seconds (process running for 9.177)
+21-Apr-2026 12:24:44 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-Apr-2026 12:24:44 INFO - Initializing Servlet 'dispatcherServlet'
+21-Apr-2026 12:24:44 INFO - Completed initialization in 1 ms
+21-Apr-2026 12:24:57 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource LMS.
+21-Apr-2026 13:54:46 INFO - Init duration for springdoc-openapi is: 1196 ms
+21-Apr-2026 13:59:02 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException with 2 errors: [Field error in object 'usersDTO' on field 'email': rejected value [string]; codes [Email.usersDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@55819712,.*]; default message [Email should be in valid format]] [Field error in object 'usersDTO' on field 'libraryCardsDTO.expiryDate': rejected value [2026-04-21]; codes [Future.usersDTO.libraryCardsDTO.expiryDate,Future.libraryCardsDTO.expiryDate,Future.expiryDate,Future.java.time.LocalDate,Future]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.expiryDate,libraryCardsDTO.expiryDate]; arguments []; default message [libraryCardsDTO.expiryDate]]; default message [Expiry date should be in future]] 
+21-Apr-2026 14:01:02 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException with 2 errors: [Field error in object 'usersDTO' on field 'libraryCardsDTO.expiryDate': rejected value [2026-04-21]; codes [Future.usersDTO.libraryCardsDTO.expiryDate,Future.libraryCardsDTO.expiryDate,Future.expiryDate,Future.java.time.LocalDate,Future]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.expiryDate,libraryCardsDTO.expiryDate]; arguments []; default message [libraryCardsDTO.expiryDate]]; default message [Expiry date should be in future]] [Field error in object 'usersDTO' on field 'name': rejected value [oliad]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:04:05 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [oliad]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:08:14 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [oliad dandena]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:08:19 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [oliad dandena]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:08:32 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [oliad dandena]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:09:00 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [borifan dabasa]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:09:22 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [borifan dabasa]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:10:35 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [paul deriba]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:10:51 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [paul deriba]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:10:53 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [paul deriba]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:12:03 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException with 2 errors: [Field error in object 'usersDTO' on field 'libraryCardsDTO.expiryDate': rejected value [2026-04-03]; codes [Future.usersDTO.libraryCardsDTO.expiryDate,Future.libraryCardsDTO.expiryDate,Future.expiryDate,Future.java.time.LocalDate,Future]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.expiryDate,libraryCardsDTO.expiryDate]; arguments []; default message [libraryCardsDTO.expiryDate]]; default message [Expiry date should be in future]] [Field error in object 'usersDTO' on field 'libraryCardsDTO.issueDate': rejected value [2026-02-01]; codes [FutureOrPresent.usersDTO.libraryCardsDTO.issueDate,FutureOrPresent.libraryCardsDTO.issueDate,FutureOrPresent.issueDate,FutureOrPresent.java.time.LocalDate,FutureOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.issueDate,libraryCardsDTO.issueDate]; arguments []; default message [libraryCardsDTO.issueDate]]; default message [Issue date should be of present or future]] 
+21-Apr-2026 14:17:20 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException with 2 errors: [Field error in object 'usersDTO' on field 'libraryCardsDTO.issueDate': rejected value [2026-04-01]; codes [FutureOrPresent.usersDTO.libraryCardsDTO.issueDate,FutureOrPresent.libraryCardsDTO.issueDate,FutureOrPresent.issueDate,FutureOrPresent.java.time.LocalDate,FutureOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.issueDate,libraryCardsDTO.issueDate]; arguments []; default message [libraryCardsDTO.issueDate]]; default message [Issue date should be of present or future]] [Field error in object 'usersDTO' on field 'name': rejected value [yosef tedesa]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:18:38 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException with 2 errors: [Field error in object 'usersDTO' on field 'libraryCardsDTO.issueDate': rejected value [2026-04-10]; codes [FutureOrPresent.usersDTO.libraryCardsDTO.issueDate,FutureOrPresent.libraryCardsDTO.issueDate,FutureOrPresent.issueDate,FutureOrPresent.java.time.LocalDate,FutureOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.issueDate,libraryCardsDTO.issueDate]; arguments []; default message [libraryCardsDTO.issueDate]]; default message [Issue date should be of present or future]] [Field error in object 'usersDTO' on field 'name': rejected value [Borifan  Dabasa]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@309b71fc,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+21-Apr-2026 14:27:18 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'libraryCardsDTO.issueDate': rejected value [2026-03-31]; codes [FutureOrPresent.usersDTO.libraryCardsDTO.issueDate,FutureOrPresent.libraryCardsDTO.issueDate,FutureOrPresent.issueDate,FutureOrPresent.java.time.LocalDate,FutureOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.libraryCardsDTO.issueDate,libraryCardsDTO.issueDate]; arguments []; default message [libraryCardsDTO.issueDate]]; default message [Issue date should be of present or future]] 
+21-Apr-2026 14:29:26 ERROR - com.gl.lms.exception.LibraryManagementSystemException: User already exists
+21-Apr-2026 14:29:26 ERROR - com.gl.lms.exception.LibraryManagementSystemException: User already exists
+21-Apr-2026 14:34:22 ERROR - org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Borifan': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+21-Apr-2026 14:44:44 WARN - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6600ab26 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+21-Apr-2026 14:44:45 INFO - Commencing graceful shutdown. Waiting for active requests to complete
+21-Apr-2026 14:44:45 INFO - Graceful shutdown complete
+21-Apr-2026 14:44:45 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 14:44:45 INFO - HikariPool-1 - Shutdown initiated...
+21-Apr-2026 14:44:46 INFO - HikariPool-1 - Shutdown completed.
+21-Apr-2026 18:21:29 INFO - HV000001: Hibernate Validator 8.0.3.Final
+21-Apr-2026 18:21:30 INFO - Starting LibraryManagementSystemApplication using Java 17.0.18 with PID 11896 (/home/borifan/Library_management_system/LibraryManagementSystem/target/classes started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+21-Apr-2026 18:21:30 INFO - No active profile set, falling back to 1 default profile: "default"
+21-Apr-2026 18:21:31 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-Apr-2026 18:21:31 INFO - Finished Spring Data repository scanning in 152 ms. Found 5 JPA repository interfaces.
+21-Apr-2026 18:21:32 INFO - Tomcat initialized with port 8080 (http)
+21-Apr-2026 18:21:32 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 18:21:32 INFO - Starting service [Tomcat]
+21-Apr-2026 18:21:32 INFO - Starting Servlet engine: [Apache Tomcat/10.1.53]
+21-Apr-2026 18:21:32 INFO - Initializing Spring embedded WebApplicationContext
+21-Apr-2026 18:21:32 INFO - Root WebApplicationContext: initialization completed in 2721 ms
+21-Apr-2026 18:21:33 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-Apr-2026 18:21:33 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+21-Apr-2026 18:21:33 INFO - HHH000026: Second-level cache disabled
+21-Apr-2026 18:21:34 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-Apr-2026 18:21:34 INFO - HikariPool-1 - Starting...
+21-Apr-2026 18:21:35 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69e36fe3
+21-Apr-2026 18:21:35 INFO - HikariPool-1 - Start completed.
+21-Apr-2026 18:21:35 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+21-Apr-2026 18:21:36 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-Apr-2026 18:21:37 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 18:21:38 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-Apr-2026 18:21:38 INFO - Starting ProtocolHandler ["http-nio-8080"]
+21-Apr-2026 18:21:39 INFO - Tomcat started on port 8080 (http) with context path '/'
+21-Apr-2026 18:21:39 INFO - Started LibraryManagementSystemApplication in 9.972 seconds (process running for 11.369)
+21-Apr-2026 18:25:29 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-Apr-2026 18:25:29 INFO - Initializing Servlet 'dispatcherServlet'
+21-Apr-2026 18:25:29 INFO - Completed initialization in 179 ms
+21-Apr-2026 18:25:31 INFO - Init duration for springdoc-openapi is: 978 ms
+21-Apr-2026 18:26:13 ERROR - org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+21-Apr-2026 18:42:14 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+21-Apr-2026 18:43:00 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+21-Apr-2026 18:43:35 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+21-Apr-2026 18:48:19 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+21-Apr-2026 18:49:07 INFO - Commencing graceful shutdown. Waiting for active requests to complete
+21-Apr-2026 18:49:07 INFO - Graceful shutdown complete
+21-Apr-2026 18:49:07 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-Apr-2026 18:49:07 INFO - HikariPool-1 - Shutdown initiated...
+21-Apr-2026 18:49:07 INFO - HikariPool-1 - Shutdown completed.
+22-Apr-2026 09:59:29 INFO - HV000001: Hibernate Validator 8.0.3.Final
+22-Apr-2026 09:59:29 INFO - Starting LibraryManagementSystemApplication using Java 17.0.18 with PID 10129 (/home/borifan/Library_management_system/LibraryManagementSystem/target/classes started by borifan in /home/borifan/Library_management_system/LibraryManagementSystem)
+22-Apr-2026 09:59:29 INFO - No active profile set, falling back to 1 default profile: "default"
+22-Apr-2026 09:59:30 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-Apr-2026 09:59:30 INFO - Finished Spring Data repository scanning in 171 ms. Found 5 JPA repository interfaces.
+22-Apr-2026 09:59:32 INFO - Tomcat initialized with port 8080 (http)
+22-Apr-2026 09:59:32 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+22-Apr-2026 09:59:32 INFO - Starting service [Tomcat]
+22-Apr-2026 09:59:32 INFO - Starting Servlet engine: [Apache Tomcat/10.1.53]
+22-Apr-2026 09:59:32 INFO - Initializing Spring embedded WebApplicationContext
+22-Apr-2026 09:59:32 INFO - Root WebApplicationContext: initialization completed in 2751 ms
+22-Apr-2026 09:59:32 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-Apr-2026 09:59:32 INFO - HHH000412: Hibernate ORM core version 6.6.45.Final
+22-Apr-2026 09:59:32 INFO - HHH000026: Second-level cache disabled
+22-Apr-2026 09:59:33 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-Apr-2026 09:59:33 INFO - HikariPool-1 - Starting...
+22-Apr-2026 09:59:34 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1aee6d14
+22-Apr-2026 09:59:34 INFO - HikariPool-1 - Start completed.
+22-Apr-2026 09:59:34 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+22-Apr-2026 09:59:35 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-Apr-2026 09:59:35 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-Apr-2026 09:59:36 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-Apr-2026 09:59:37 INFO - Starting ProtocolHandler ["http-nio-8080"]
+22-Apr-2026 09:59:37 INFO - Tomcat started on port 8080 (http) with context path '/'
+22-Apr-2026 09:59:37 INFO - Started LibraryManagementSystemApplication in 9.115 seconds (process running for 11.343)
+22-Apr-2026 10:01:52 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-Apr-2026 10:01:52 INFO - Initializing Servlet 'dispatcherServlet'
+22-Apr-2026 10:01:52 INFO - Completed initialization in 8 ms
+22-Apr-2026 10:01:52 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+22-Apr-2026 10:04:00 INFO - Init duration for springdoc-openapi is: 1292 ms
+22-Apr-2026 10:11:05 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addAuthorAndBooks(com.gl.lms.dto.AuthorsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'authorsDTO' on field 'name': rejected value [Miratu shanko]; codes [Pattern.authorsDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authorsDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@2c771f8c,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+22-Apr-2026 10:12:44 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addAuthorAndBooks(com.gl.lms.dto.AuthorsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'authorsDTO' on field 'name': rejected value [miratu shanko]; codes [Pattern.authorsDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authorsDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@2c771f8c,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+22-Apr-2026 10:14:25 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+22-Apr-2026 10:15:19 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+22-Apr-2026 10:18:04 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:18:04 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:18:08 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:18:08 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:18:10 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:18:10 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:33:17 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:33:18 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:36:21 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+22-Apr-2026 10:37:10 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+22-Apr-2026 10:41:04 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+22-Apr-2026 10:46:14 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found
+22-Apr-2026 10:46:14 ERROR - com.gl.lms.exception.LibraryManagementSystemException: Book not found

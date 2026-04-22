@@ -6,6 +6,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -50,6 +51,21 @@ public class ControllerException {
         LOGGER.error(ex);
 
         return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<Error> noResourceFoundException(NoResourceFoundException ex) {
+        Error error = new Error();
+
+        List<String> errMessages = new ArrayList<>();
+        errMessages.add(ex.getMessage());
+
+        error.setMessage(errMessages);
+        error.setStatusCode(String.valueOf(HttpStatus.NOT_FOUND.value()));
+        error.setTimeStamp(LocalDateTime.now());
+        LOGGER.error(ex);
+
+        return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

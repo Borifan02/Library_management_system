@@ -22,7 +22,7 @@ A complete full-stack Library Management System built with **Spring Boot (Backen
 | Layer      | Technology                 |
 |------------|-----------------------------|
 | Backend    | Spring Boot 3.5.0           |
-| Language   | Java 17+ / 21+ / 24          |
+| Language   | Java 17+                    |
 | ORM        | Spring Data JPA + Hibernate |
 | Database   | PostgreSQL                  |
 | Validation | Jakarta Bean Validation     |
