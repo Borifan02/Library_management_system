@@ -188,5 +188,5 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Thimothi Babu Ramagalla**  
-[GitHub Profile](https://github.com/thimothybabu123)
+**Borifan Dabasa**  
+[GitHub Profile](https://github.com/Borifan02)
